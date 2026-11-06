@@ -1,0 +1,957 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Ariel P. Abad | Personal Portfolio</title>
+
+
+<style>
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    color: #172c50;
+
+    background: white;
+
+    line-height: 1.6;
+
+}
+
+
+/* NAVIGATION */
+
+header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+}
+
+
+.navbar {
+
+    background: #c9e2ff;
+
+    border-bottom: 2px solid #1264d8;
+
+    padding: 15px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.logo {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #0753b8;
+
+    text-decoration: none;
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    list-style: none;
+
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #172c50;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+.nav-links a:hover {
+
+    color: #0865dc;
+
+}
+
+
+.contact-btn {
+
+    display: inline-block;
+
+    background: #0865dc;
+
+    color: white !important;
+
+    padding: 10px 18px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+}
+
+
+.menu-toggle {
+
+    display: none;
+
+    font-size: 26px;
+
+    background: none;
+
+    border: none;
+
+    color: #0753b8;
+
+    cursor: pointer;
+
+}
+
+
+/* HOME */
+
+.home {
+
+    min-height: 480px;
+
+    background: #eaf4ff;
+
+    padding: 65px 10%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 35px;
+
+}
+
+
+.home-content {
+
+    max-width: 650px;
+
+}
+
+
+.home-content h1 {
+
+    font-size: 38px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.home-content h2 {
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.home-content h2 span {
+
+    color: #0865dc;
+
+}
+
+
+.home-content p {
+
+    line-height: 1.8;
+
+    font-size: 15px;
+
+}
+
+
+.home-image img {
+
+    width: 220px;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border: 5px solid #0865dc;
+
+    border-radius: 50%;
+
+}
+
+
+/* SECTIONS */
+
+.section {
+
+    padding: 70px 10%;
+
+    text-align: center;
+
+}
+
+
+.subtitle {
+
+    color: #0865dc;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.section h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.description {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    line-height: 1.8;
+
+}
+
+
+.light-section {
+
+    background: #f0f7ff;
+
+}
+
+
+/* CARDS */
+
+.card-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    margin-top: 30px;
+
+}
+
+
+.card {
+
+    background: #eaf4ff;
+
+    border: 1px solid #b5d5ff;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    width: 220px;
+
+    transition: 0.3s;
+
+}
+
+
+.card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 5px 15px #b5d5ff;
+
+}
+
+
+.card h3 {
+
+    color: #0865dc;
+
+    margin-bottom: 12px;
+
+}
+
+
+.card p {
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+.card img {
+
+    max-width: 100%;
+
+    height: 140px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin-top: 8px;
+
+}
+
+
+/* ACHIEVEMENTS */
+
+.achievement-card {
+
+    max-width: 500px;
+
+    margin: 25px auto;
+
+    padding: 25px;
+
+    background: #eaf4ff;
+
+    border: 1px solid #b5d5ff;
+
+    border-radius: 12px;
+
+}
+
+
+.achievement-card h3 {
+
+    color: #0865dc;
+
+    margin-bottom: 15px;
+
+}
+
+
+.achievement-card p {
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+
+}
+
+
+.achievement-card img {
+
+    width: 100%;
+
+    border-radius: 8px;
+
+}
+
+
+/* PROJECTS */
+
+.project-card {
+
+    background: #ffffff;
+
+}
+
+
+/* CONTACT */
+
+.contact-section {
+
+    background: #eaf4ff;
+
+}
+
+
+.contact-section p {
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* FOOTER */
+
+footer {
+
+    background: #172c50;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+
+        padding: 15px 5%;
+
+    }
+
+
+    .menu-toggle {
+
+        display: block;
+
+    }
+
+
+    .nav-links {
+
+        display: none;
+
+        position: absolute;
+
+        top: 58px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: #c9e2ff;
+
+        flex-direction: column;
+
+        padding: 20px;
+
+        gap: 20px;
+
+        border-bottom: 2px solid #1264d8;
+
+    }
+
+
+    .nav-links.active {
+
+        display: flex;
+
+    }
+
+
+    .home {
+
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        padding: 45px 7%;
+
+    }
+
+
+    .home-content h1 {
+
+        font-size: 29px;
+
+    }
+
+
+    .home-content h2 {
+
+        font-size: 22px;
+
+    }
+
+
+    .home-image img {
+
+        width: 190px;
+
+        height: 190px;
+
+    }
+
+
+    .section {
+
+        padding: 55px 7%;
+
+    }
+
+
+    .section h2 {
+
+        font-size: 27px;
+
+    }
+
+
+    .card {
+
+        width: 100%;
+
+        max-width: 320px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header>
+
+<nav class="navbar">
+
+
+<a href="#home" class="logo">&lt;A.Ab/&gt;</a>
+
+
+<button class="menu-toggle" id="menuToggle"
+
+aria-label="Open navigation menu">☰</button>
+
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#hobbies">Hobbies</a></li>
+
+<li><a href="#achievements">Achievements</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact" class="contact-btn">Contact Me</a></li>
+
+</ul>
+
+
+</nav>
+
+</header>
+
+
+<!-- HOME -->
+
+<section class="home" id="home">
+
+
+<div class="home-content">
+
+<h1>Hi, I'm Ariel P. Abad</h1>
+
+
+<h2>I'm a <span>BSIT Student</span></h2>
+
+
+<p>
+
+I'm a BSIT student at ICCT Colleges in Cainta, Rizal.
+
+I'm here to learn, grow, and turn my passion for technology
+
+into a career I can be proud of.
+
+</p>
+
+</div>
+
+
+<div class="home-image">
+
+<img 
+src="https://github.com/abadariel0003-yel/portfolio/raw/main/d3e3eca8-f520-4b97-a71e-7f8219b0a4b7%20(1).jpg" 
+alt="Ariel Abad">
+
+</div>
+
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section" id="about">
+
+
+<p class="subtitle">GET TO KNOW ME</p>
+
+<h2>About My Journey</h2>
+
+
+<p class="description">
+
+My journey as a BSIT student at ICCT Colleges is filled
+
+with learning and self-improvement. I am developing my
+
+skills in programming and technology, with additional
+
+experience in SMAW NC II and driving. My goal is to become
+
+a successful IT professional while continuing to improve
+
+my skills.
+
+</p>
+
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section class="section light-section" id="skills">
+
+
+<p class="subtitle">WHAT I CAN DO</p>
+
+<h2>My Skills</h2>
+
+
+<div class="card-container">
+
+
+<div class="card">
+
+<h3>Driving</h3>
+
+<img
+
+src="https://i.ibb.co/zph7rDZ/IMG-20260808-093224-755.png"
+
+alt="Driving experience">
+
+<p>Driving experience and road awareness.</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Welding</h3>
+
+<p>Shielded Metal Arc Welding (SMAW).</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Basic Programming</h3>
+
+<p>Learning HTML, CSS, JavaScript, PHP, and Python.</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- HOBBIES -->
+
+<section class="section" id="hobbies">
+
+
+<p class="subtitle">MY INTERESTS</p>
+
+<h2>My Hobbies</h2>
+
+
+<div class="card-container">
+
+
+<div class="card">
+
+<h3>Rides</h3>
+
+<img
+
+src="https://i.postimg.cc/Bv7VyC8K/IMG-20261106-155056-876.jpg"
+
+alt="My rides hobby">
+
+<p>Enjoying rides and exploring places.</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Coffee</h3>
+
+<img
+
+src="https://i.ibb.co/2YdTpzkj/IMG-20261104-215728-625.png"
+
+alt="Coffee hobby">
+
+<p>Enjoying coffee during my free time.</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Mobile Legends</h3>
+
+<p>Playing mobile games during free time.</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Playing Guitar</h3>
+
+<p>Enjoying music and playing guitar.</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ACHIEVEMENTS -->
+
+<section class="section light-section" id="achievements">
+
+
+<p class="subtitle">MY QUALIFICATIONS</p>
+
+<h2>Achievements</h2>
+
+
+<div class="achievement-card">
+
+
+<h3>SMAW NC II</h3>
+
+
+<p>
+
+Shielded Metal Arc Welding (SMAW)
+
+National Certificate II qualification.
+
+</p>
+
+
+<img
+
+src="https://i.ibb.co/KzzzzQ8t/49522-fb3bcb2d4cdcddec9d9856f96123bc27-Edited-20261104-161801-0000.png"
+
+alt="SMAW NC II Certificate">
+
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section class="section" id="projects">
+
+
+<p class="subtitle">MY WORK</p>
+
+<h2>My Projects</h2>
+
+
+<div class="card-container">
+
+
+<div class="card project-card">
+
+<h3>Student Registration System</h3>
+
+<p>
+
+A PHP and MySQL project for registering
+
+and searching student information.
+
+</p>
+
+</div>
+
+
+<div class="card project-card">
+
+<h3>Payroll System</h3>
+
+<p>
+
+A Python project for employee information
+
+and payroll computation.
+
+</p>
+
+</div>
+
+
+<div class="card project-card">
+
+<h3>Personal Portfolio</h3>
+
+<p>
+
+A personal website showcasing my background,
+
+skills, and achievements.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="section contact-section" id="contact">
+
+
+<p class="subtitle">LET'S CONNECT</p>
+
+<h2>Contact Me</h2>
+
+
+<p>
+
+Thank you for visiting my personal portfolio!
+
+Feel free to contact me through my email.
+
+</p>
+
+
+<a href="mailto:abadariel004@gmail.com"
+
+class="contact-btn">Email Me</a>
+
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Ariel P. Abad | Personal Portfolio</p>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+const menuToggle = document.getElementById("menuToggle");
+
+const navLinks = document.getElementById("navLinks");
+
+
+menuToggle.addEventListener("click", function() {
+
+    navLinks.classList.toggle("active");
+
+});
+
+
+const links = document.querySelectorAll(".nav-links a");
+
+
+links.forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        navLinks.classList.remove("active");
+
+    });
+
+});
+
+</script>
+
+
+</body>
+
+</html>
